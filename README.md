@@ -1,2 +1,2 @@
-# json_formatter_and_validator
+# JSON Formatter and Validator
 Validates JSON formatting
