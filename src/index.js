@@ -1,13 +1,10 @@
 // import "./styles.css";
 
 const inputField = document.querySelector('#input');
-// const inputButton = document.querySelector('#inputButton')
-// const input = document.querySelector("input");
-// console.log("First"+input.value)
-// input.addEventListener("click", getInput);
-
 
 inputButton.addEventListener('click', function() {
+    // Input Field = inputfield.value
+
     console.log(inputField.value);
   });
 
