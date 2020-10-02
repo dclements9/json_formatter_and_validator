@@ -1,4 +1,5 @@
-// TODO: Clarify errors to display for user.
+// TODO: 1. Failed = Clarify errors to display for user.
+//       2. Success = Pretty Print JSON 
 
 const inputField = document.querySelector('#input');
 
