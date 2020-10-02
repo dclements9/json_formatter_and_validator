@@ -11,8 +11,15 @@ body {
   }
   
   #inputButton{
-    border: outset;
+    border: none;
     font-size: 16px;
     background-color: #173F5F;
     color: #F6D55C;
+    box-shadow: 0px 8px 15px;
+  }
+
+  #inputButton:hover {
+    background-color: #F6D55C;
+    box-shadow: 0px 15px 20px;
+    color: #173F5F;
   }
