@@ -1,3 +1,5 @@
+// TODO: Clarify errors to display for user.
+
 const inputField = document.querySelector('#input');
 
 inputButton.addEventListener('click', function() {
@@ -21,6 +23,7 @@ inputButton.addEventListener('click', function() {
 
   function sanitizeError(error){
     const sanitizedResult = "Sanitized this:" + error;
+//TODO
     const failedGif = document.getElementById("resultDiv").innerHTML = 
     '<img src="https://media.giphy.com/media/HNEmXQz7A0lDq/giphy.gif"/>';
     //return sanitizedResult;
