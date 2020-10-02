@@ -26,3 +26,13 @@ body {
     box-shadow: 0px 15px 20px;
     color: #173F5F;
   }
+
+  #resultDiv{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 1;
+    overflow:visible;
+    color: #F6D55C;
+    
+  }
