@@ -7,25 +7,21 @@ inputButton.addEventListener('click', function() {
     // Input Field = inputfield.value
     let result = ''
 
-    // Testing -  { "name":"Dylan", "age":31, "car":null } 
+    // Testing -  {"foo":1,"bar":2,"baz":[4,5,6]}
     try {
-      if (JSON.parse(inputField.value)){
-      
-      // Temp gif on success
-      // result = document.getElementById("resultDiv").innerHTML = 
-      // '<img src="https://media.giphy.com/media/a0h7sAqON67nO/giphy.gif"/>';
-      
-      // Final Success Result
-      var jsonPretty = JSON.stringify(JSON.parse(inputField.value),null,2); 
-      result = document.getElementById("resultDiv").innerHTML = jsonPretty;
+      if (JSON.parse(inputField.value)){      
+      let jsonPrint = JSON.stringify(JSON.parse(inputField.value),null,2); 
+      //document.getElementById("resultDiv").innerHTML = 
+      result = jsonPrint;
       }
     }catch(error){
       if (error){
+        console.log(error)
         result = sanitizeError(error);
       }
     }
     //Outputs result to result Div on page
-      document.getElementById("resultDiv").innerHTML = result
+      document.getElementById("resultDiv").innerHTML = result;
   });
 
   function sanitizeError(error){
