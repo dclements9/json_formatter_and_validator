@@ -1,7 +1,18 @@
+h1, h2 {
+  color: #F6D55C;
+}
+
 body {
     font-family: sans-serif;
     margin: 100px auto;
     max-width: 600px;
-    padding: 4rem; 
+    padding: 4rem;
+  background-color: #20639B;
   }
   
+  #inputButton{
+    border: outset;
+    font-size: 16px;
+    background-color: #173F5F;
+    color: #F6D55C;
+  }
