@@ -1,13 +1,15 @@
 h1, h2 {
   color: #F6D55C;
+  text-align: center;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 100px auto;
     max-width: 600px;
     padding: 4rem;
-  background-color: #20639B;
+    text-align: center;
+    background-color: #20639B;
   }
   
   #inputButton{
