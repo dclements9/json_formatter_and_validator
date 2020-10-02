@@ -10,8 +10,14 @@ inputButton.addEventListener('click', function() {
     // Testing -  { "name":"Dylan", "age":31, "car":null } 
     try {
       if (JSON.parse(inputField.value)){
-      result = document.getElementById("resultDiv").innerHTML = 
-      '<img src="https://media.giphy.com/media/a0h7sAqON67nO/giphy.gif"/>';
+      
+      // Temp gif on success
+      // result = document.getElementById("resultDiv").innerHTML = 
+      // '<img src="https://media.giphy.com/media/a0h7sAqON67nO/giphy.gif"/>';
+      
+      // Final Success Result
+      var jsonPretty = JSON.stringify(JSON.parse(inputField.value),null,2); 
+      result = document.getElementById("resultDiv").innerHTML = jsonPretty;
       }
     }catch(error){
       if (error){
