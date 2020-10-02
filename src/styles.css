@@ -18,6 +18,7 @@ body {
     background-color: #173F5F;
     color: #F6D55C;
     box-shadow: 0px 8px 15px;
+    border-radius: 45px;
   }
 
   #inputButton:hover {
