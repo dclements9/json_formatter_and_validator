@@ -16,11 +16,13 @@ inputButton.addEventListener('click', function() {
     }
     //Outputs result to result Div on page
       document.getElementById("resultDiv").innerHTML = result
-
   });
 
   function sanitizeError(error){
 
     const sanitizedResult = "Sanitized this:" + error;
-    return sanitizedResult;
+    const failedGif = document.getElementById("resultDiv").innerHTML = '<img src="https://media.giphy.com/media/HNEmXQz7A0lDq/giphy.gif"/>';
+    
+    //return sanitizedResult;
+    return failedGif;
   }
