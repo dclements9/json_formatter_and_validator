@@ -18,8 +18,11 @@ inputButton.addEventListener('click', function() {
   });
 
   function sanitizeError(error){
-    const failedGif = document.getElementById("resultPre").innerHTML = 
-    error + '</br>' + '</br>' +'<img src="https://media.giphy.com/media/HNEmXQz7A0lDq/giphy.gif"/>';
+    const errorMessage = 'The Error is: ' + '<br>' + error;
+    const gifMessage = '<img src="https://media.giphy.com/media/HNEmXQz7A0lDq/giphy.gif"/>';
+    
+    const resultMessage = 'This input is not valid JSON' + 
+    '<br>' + '<br>' + errorMessage + '<br>' + '<br>' + gifMessage;
 
-    return failedGif;
+    return resultMessage;
   }
